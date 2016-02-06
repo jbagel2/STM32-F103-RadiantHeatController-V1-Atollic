@@ -1,0 +1,17 @@
+/*
+ * nodefirm.h
+ *
+ *  Created on: Feb 6, 2016
+ *      Author: Jacob
+ */
+
+#ifndef NODEFIRM_H_
+#define NODEFIRM_H_
+
+const char *AppFunctionsArray[3];
+
+void SaveTempHumid(float temp, float humid);
+void SaveNodeStatus(uint16_t pump, uint16_t valve, float lineTemp1, float lineTemp2);
+
+
+#endif /* NODEFIRM_H_ */

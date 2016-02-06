@@ -1,0 +1,27 @@
+/*
+ * nodefirm.h
+ *
+ *  Created on: Feb 6, 2016
+ *      Author: Jacob
+ */
+
+#ifndef NODEFIRM_H_
+#define NODEFIRM_H_
+
+#include "stdint.h"
+
+typedef enum
+{
+	WIFI_CHECK_MODULE_CONNECTION = 0,
+	WIFI_GET_CURRENT_IP
+}ESP_Commands;
+
+
+const char *AppFunctionsArray[3];
+const char *NodeCommandsArray[3];
+
+void SaveTempHumid(float temp, float humid);
+void SaveNodeStatus(uint16_t pump, uint16_t valve, float lineTemp1, float lineTemp2);
+
+
+#endif /* NODEFIRM_H_ */
